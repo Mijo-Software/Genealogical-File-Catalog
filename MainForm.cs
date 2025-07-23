@@ -21,6 +21,7 @@ namespace GenealogicalFileCatalog
 		{
 			InitializeComponent();
 			LoadDrivesAndExtensions();
+			toolStripButtonStop.Enabled = false;
 		}
 
 		/// <summary>
@@ -92,7 +93,6 @@ namespace GenealogicalFileCatalog
 					catch (Exception ex)
 					{
 						_ = MessageBox.Show(text: $"Error accessing directory: {dir} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-						toolStripStatusLabelInfo.Text = $"Error accessing directory: {dir} ({ex.Message})";
 					}
 				}
 
@@ -166,8 +166,8 @@ namespace GenealogicalFileCatalog
 		private async void ButtonSearch_Click(object sender, EventArgs e)
 		{
 			listViewResults.Items.Clear();
-			buttonStart.Enabled = false;
-			buttonStop.Enabled = true;
+			toolStripSplitButtonStart.Enabled = false;
+			toolStripButtonStop.Enabled = true;
 			stopRequested = false;
 
 			bool includeHidden = checkBoxIncludeHidden.Checked;
@@ -183,8 +183,8 @@ namespace GenealogicalFileCatalog
 				}
 			}
 
-			buttonStart.Enabled = true;
-			buttonStop.Enabled = false;
+			toolStripSplitButtonStart.Enabled = true;
+			toolStripButtonStop.Enabled = false;
 			toolStripStatusLabelInfo.Text = stopRequested ? "Stopped" : "Done";
 		}
 
