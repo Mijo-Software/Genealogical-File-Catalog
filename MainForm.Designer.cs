@@ -30,7 +30,6 @@
         {
             ListViewGroup listViewGroup1 = new ListViewGroup("GEDCOM files", HorizontalAlignment.Left);
             checkedListBoxDrives = new CheckedListBox();
-            checkBoxIncludeHidden = new CheckBox();
             listViewResults = new BufferedListView();
             columnHeaderFileName = new ColumnHeader();
             columnHeaderPath = new ColumnHeader();
@@ -39,21 +38,35 @@
             checkedListBoxExtensions = new CheckedListBox();
             groupBoxDrives = new GroupBox();
             groupBoxExtensions = new GroupBox();
-            statusStrip = new StatusStrip();
+            statusStripMain = new StatusStrip();
             toolStripStatusLabelInfo = new ToolStripStatusLabel();
             toolStripContainer = new ToolStripContainer();
+            splitContainerMain = new SplitContainer();
+            splitContainerDrivesAndExtensions = new SplitContainer();
+            panelResults = new Panel();
             toolStrip = new ToolStrip();
             toolStripSplitButtonStart = new ToolStripSplitButton();
-            startToolStripMenuItemStart = new ToolStripMenuItem();
-            toolStripMenuItemStartIncludeHiddenFolders = new ToolStripMenuItem();
+            toolStripMenuItemIncludeHiddenFolders = new ToolStripMenuItem();
             toolStripButtonStop = new ToolStripButton();
+            toolStripButtonRefresh = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripButtonInfo = new ToolStripButton();
             groupBoxDrives.SuspendLayout();
             groupBoxExtensions.SuspendLayout();
-            statusStrip.SuspendLayout();
+            statusStripMain.SuspendLayout();
             toolStripContainer.BottomToolStripPanel.SuspendLayout();
             toolStripContainer.ContentPanel.SuspendLayout();
             toolStripContainer.TopToolStripPanel.SuspendLayout();
             toolStripContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainerMain).BeginInit();
+            splitContainerMain.Panel1.SuspendLayout();
+            splitContainerMain.Panel2.SuspendLayout();
+            splitContainerMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainerDrivesAndExtensions).BeginInit();
+            splitContainerDrivesAndExtensions.Panel1.SuspendLayout();
+            splitContainerDrivesAndExtensions.Panel2.SuspendLayout();
+            splitContainerDrivesAndExtensions.SuspendLayout();
+            panelResults.SuspendLayout();
             toolStrip.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,27 +78,18 @@
             checkedListBoxDrives.HorizontalScrollbar = true;
             checkedListBoxDrives.Location = new Point(3, 19);
             checkedListBoxDrives.Name = "checkedListBoxDrives";
-            checkedListBoxDrives.Size = new Size(75, 71);
+            checkedListBoxDrives.Size = new Size(144, 123);
             checkedListBoxDrives.Sorted = true;
             checkedListBoxDrives.TabIndex = 0;
-            // 
-            // checkBoxIncludeHidden
-            // 
-            checkBoxIncludeHidden.AutoSize = true;
-            checkBoxIncludeHidden.Location = new Point(90, 13);
-            checkBoxIncludeHidden.Name = "checkBoxIncludeHidden";
-            checkBoxIncludeHidden.Size = new Size(144, 19);
-            checkBoxIncludeHidden.TabIndex = 4;
-            checkBoxIncludeHidden.Text = "Include &hidden folders";
-            checkBoxIncludeHidden.UseVisualStyleBackColor = true;
+            checkedListBoxDrives.ItemCheck += CheckedListBoxDrives_ItemCheck;
             // 
             // listViewResults
             // 
             listViewResults.Activation = ItemActivation.OneClick;
             listViewResults.AllowColumnReorder = true;
-            listViewResults.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listViewResults.CheckBoxes = true;
             listViewResults.Columns.AddRange(new ColumnHeader[] { columnHeaderFileName, columnHeaderPath, columnHeaderFileSize, columnHeaderFileDateChanged });
+            listViewResults.Dock = DockStyle.Fill;
             listViewResults.FullRowSelect = true;
             listViewResults.GridLines = true;
             listViewGroup1.Footer = "a footer";
@@ -96,11 +100,11 @@
             listViewResults.Groups.AddRange(new ListViewGroup[] { listViewGroup1 });
             listViewResults.HotTracking = true;
             listViewResults.HoverSelection = true;
-            listViewResults.Location = new Point(90, 38);
+            listViewResults.Location = new Point(0, 0);
             listViewResults.MultiSelect = false;
             listViewResults.Name = "listViewResults";
             listViewResults.ShowItemToolTips = true;
-            listViewResults.Size = new Size(676, 370);
+            listViewResults.Size = new Size(625, 418);
             listViewResults.TabIndex = 5;
             listViewResults.UseCompatibleStateImageBehavior = false;
             listViewResults.View = View.Details;
@@ -108,23 +112,23 @@
             // columnHeaderFileName
             // 
             columnHeaderFileName.Text = "file name";
-            columnHeaderFileName.Width = 150;
+            columnHeaderFileName.Width = 170;
             // 
             // columnHeaderPath
             // 
             columnHeaderPath.Text = "path";
-            columnHeaderPath.Width = 300;
+            columnHeaderPath.Width = 320;
             // 
             // columnHeaderFileSize
             // 
             columnHeaderFileSize.Text = "size (Bytes)";
             columnHeaderFileSize.TextAlign = HorizontalAlignment.Center;
-            columnHeaderFileSize.Width = 75;
+            columnHeaderFileSize.Width = 100;
             // 
             // columnHeaderFileDateChanged
             // 
             columnHeaderFileDateChanged.Text = "change date";
-            columnHeaderFileDateChanged.Width = 120;
+            columnHeaderFileDateChanged.Width = 140;
             // 
             // checkedListBoxExtensions
             // 
@@ -134,15 +138,17 @@
             checkedListBoxExtensions.HorizontalScrollbar = true;
             checkedListBoxExtensions.Location = new Point(3, 19);
             checkedListBoxExtensions.Name = "checkedListBoxExtensions";
-            checkedListBoxExtensions.Size = new Size(75, 112);
+            checkedListBoxExtensions.Size = new Size(144, 247);
             checkedListBoxExtensions.TabIndex = 0;
+            checkedListBoxExtensions.ItemCheck += CheckedListBoxExtensions_ItemCheck;
             // 
             // groupBoxDrives
             // 
             groupBoxDrives.Controls.Add(checkedListBoxDrives);
-            groupBoxDrives.Location = new Point(3, 3);
+            groupBoxDrives.Dock = DockStyle.Fill;
+            groupBoxDrives.Location = new Point(0, 0);
             groupBoxDrives.Name = "groupBoxDrives";
-            groupBoxDrives.Size = new Size(81, 93);
+            groupBoxDrives.Size = new Size(150, 145);
             groupBoxDrives.TabIndex = 0;
             groupBoxDrives.TabStop = false;
             groupBoxDrives.Text = "&drives";
@@ -150,24 +156,25 @@
             // groupBoxExtensions
             // 
             groupBoxExtensions.Controls.Add(checkedListBoxExtensions);
-            groupBoxExtensions.Location = new Point(3, 102);
+            groupBoxExtensions.Dock = DockStyle.Fill;
+            groupBoxExtensions.Location = new Point(0, 0);
             groupBoxExtensions.Name = "groupBoxExtensions";
-            groupBoxExtensions.Size = new Size(81, 134);
+            groupBoxExtensions.Size = new Size(150, 269);
             groupBoxExtensions.TabIndex = 1;
             groupBoxExtensions.TabStop = false;
             groupBoxExtensions.Text = "&extensions";
             // 
-            // statusStrip
+            // statusStripMain
             // 
-            statusStrip.Dock = DockStyle.None;
-            statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabelInfo });
-            statusStrip.Location = new Point(0, 0);
-            statusStrip.Name = "statusStrip";
-            statusStrip.ShowItemToolTips = true;
-            statusStrip.Size = new Size(779, 22);
-            statusStrip.TabIndex = 6;
-            statusStrip.TabStop = true;
-            statusStrip.Text = "statusStrip";
+            statusStripMain.Dock = DockStyle.None;
+            statusStripMain.Items.AddRange(new ToolStripItem[] { toolStripStatusLabelInfo });
+            statusStripMain.Location = new Point(0, 0);
+            statusStripMain.Name = "statusStripMain";
+            statusStripMain.ShowItemToolTips = true;
+            statusStripMain.Size = new Size(779, 22);
+            statusStripMain.TabIndex = 6;
+            statusStripMain.TabStop = true;
+            statusStripMain.Text = "statusStripMain";
             // 
             // toolStripStatusLabelInfo
             // 
@@ -180,14 +187,11 @@
             // 
             // toolStripContainer.BottomToolStripPanel
             // 
-            toolStripContainer.BottomToolStripPanel.Controls.Add(statusStrip);
+            toolStripContainer.BottomToolStripPanel.Controls.Add(statusStripMain);
             // 
             // toolStripContainer.ContentPanel
             // 
-            toolStripContainer.ContentPanel.Controls.Add(groupBoxDrives);
-            toolStripContainer.ContentPanel.Controls.Add(groupBoxExtensions);
-            toolStripContainer.ContentPanel.Controls.Add(checkBoxIncludeHidden);
-            toolStripContainer.ContentPanel.Controls.Add(listViewResults);
+            toolStripContainer.ContentPanel.Controls.Add(splitContainerMain);
             toolStripContainer.ContentPanel.Size = new Size(779, 418);
             toolStripContainer.Dock = DockStyle.Fill;
             toolStripContainer.Location = new Point(0, 0);
@@ -200,12 +204,57 @@
             // 
             toolStripContainer.TopToolStripPanel.Controls.Add(toolStrip);
             // 
+            // splitContainerMain
+            // 
+            splitContainerMain.Dock = DockStyle.Fill;
+            splitContainerMain.FixedPanel = FixedPanel.Panel1;
+            splitContainerMain.Location = new Point(0, 0);
+            splitContainerMain.Name = "splitContainerMain";
+            // 
+            // splitContainerMain.Panel1
+            // 
+            splitContainerMain.Panel1.Controls.Add(splitContainerDrivesAndExtensions);
+            // 
+            // splitContainerMain.Panel2
+            // 
+            splitContainerMain.Panel2.Controls.Add(panelResults);
+            splitContainerMain.Size = new Size(779, 418);
+            splitContainerMain.SplitterDistance = 150;
+            splitContainerMain.TabIndex = 6;
+            // 
+            // splitContainerDrivesAndExtensions
+            // 
+            splitContainerDrivesAndExtensions.Dock = DockStyle.Fill;
+            splitContainerDrivesAndExtensions.Location = new Point(0, 0);
+            splitContainerDrivesAndExtensions.Name = "splitContainerDrivesAndExtensions";
+            splitContainerDrivesAndExtensions.Orientation = Orientation.Horizontal;
+            // 
+            // splitContainerDrivesAndExtensions.Panel1
+            // 
+            splitContainerDrivesAndExtensions.Panel1.Controls.Add(groupBoxDrives);
+            // 
+            // splitContainerDrivesAndExtensions.Panel2
+            // 
+            splitContainerDrivesAndExtensions.Panel2.Controls.Add(groupBoxExtensions);
+            splitContainerDrivesAndExtensions.Size = new Size(150, 418);
+            splitContainerDrivesAndExtensions.SplitterDistance = 145;
+            splitContainerDrivesAndExtensions.TabIndex = 0;
+            // 
+            // panelResults
+            // 
+            panelResults.Controls.Add(listViewResults);
+            panelResults.Dock = DockStyle.Fill;
+            panelResults.Location = new Point(0, 0);
+            panelResults.Name = "panelResults";
+            panelResults.Size = new Size(625, 418);
+            panelResults.TabIndex = 6;
+            // 
             // toolStrip
             // 
             toolStrip.AllowClickThrough = true;
             toolStrip.AllowItemReorder = true;
             toolStrip.Dock = DockStyle.None;
-            toolStrip.Items.AddRange(new ToolStripItem[] { toolStripSplitButtonStart, toolStripButtonStop });
+            toolStrip.Items.AddRange(new ToolStripItem[] { toolStripSplitButtonStart, toolStripButtonStop, toolStripButtonRefresh, toolStripSeparator1, toolStripButtonInfo });
             toolStrip.Location = new Point(0, 0);
             toolStrip.Name = "toolStrip";
             toolStrip.Size = new Size(779, 39);
@@ -215,8 +264,8 @@
             // 
             // toolStripSplitButtonStart
             // 
-            toolStripSplitButtonStart.DropDownItems.AddRange(new ToolStripItem[] { startToolStripMenuItemStart, toolStripMenuItemStartIncludeHiddenFolders });
-            toolStripSplitButtonStart.Image = Properties.Resources.control_play_blue;
+            toolStripSplitButtonStart.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemIncludeHiddenFolders });
+            toolStripSplitButtonStart.Image = Properties.Resources.control_play_blue_32;
             toolStripSplitButtonStart.ImageScaling = ToolStripItemImageScaling.None;
             toolStripSplitButtonStart.ImageTransparentColor = Color.Magenta;
             toolStripSplitButtonStart.Name = "toolStripSplitButtonStart";
@@ -224,32 +273,48 @@
             toolStripSplitButtonStart.Text = "&Start";
             toolStripSplitButtonStart.ButtonClick += ButtonSearch_Click;
             // 
-            // startToolStripMenuItemStart
+            // toolStripMenuItemIncludeHiddenFolders
             // 
-            startToolStripMenuItemStart.AutoToolTip = true;
-            startToolStripMenuItemStart.Image = Properties.Resources.control_play_blue;
-            startToolStripMenuItemStart.Name = "startToolStripMenuItemStart";
-            startToolStripMenuItemStart.Size = new Size(227, 22);
-            startToolStripMenuItemStart.Text = "&Start";
-            startToolStripMenuItemStart.Click += ButtonSearch_Click;
-            // 
-            // toolStripMenuItemStartIncludeHiddenFolders
-            // 
-            toolStripMenuItemStartIncludeHiddenFolders.AutoToolTip = true;
-            toolStripMenuItemStartIncludeHiddenFolders.Enabled = false;
-            toolStripMenuItemStartIncludeHiddenFolders.Name = "toolStripMenuItemStartIncludeHiddenFolders";
-            toolStripMenuItemStartIncludeHiddenFolders.Size = new Size(227, 22);
-            toolStripMenuItemStartIncludeHiddenFolders.Text = "Start (include &hidden folders)";
+            toolStripMenuItemIncludeHiddenFolders.AutoToolTip = true;
+            toolStripMenuItemIncludeHiddenFolders.CheckOnClick = true;
+            toolStripMenuItemIncludeHiddenFolders.Name = "toolStripMenuItemIncludeHiddenFolders";
+            toolStripMenuItemIncludeHiddenFolders.Size = new Size(192, 22);
+            toolStripMenuItemIncludeHiddenFolders.Text = "Include &hidden folders";
             // 
             // toolStripButtonStop
             // 
-            toolStripButtonStop.Image = Properties.Resources.control_stop_blue;
+            toolStripButtonStop.Image = Properties.Resources.control_stop_blue_32;
             toolStripButtonStop.ImageScaling = ToolStripItemImageScaling.None;
             toolStripButtonStop.ImageTransparentColor = Color.Magenta;
             toolStripButtonStop.Name = "toolStripButtonStop";
             toolStripButtonStop.Size = new Size(67, 36);
             toolStripButtonStop.Text = "Sto&p";
             toolStripButtonStop.Click += ButtonStop_Click;
+            // 
+            // toolStripButtonRefresh
+            // 
+            toolStripButtonRefresh.Image = Properties.Resources.arrow_refresh_32;
+            toolStripButtonRefresh.ImageScaling = ToolStripItemImageScaling.None;
+            toolStripButtonRefresh.ImageTransparentColor = Color.Magenta;
+            toolStripButtonRefresh.Name = "toolStripButtonRefresh";
+            toolStripButtonRefresh.Size = new Size(82, 36);
+            toolStripButtonRefresh.Text = "&Refresh";
+            toolStripButtonRefresh.Click += ButtonRefresh_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(6, 39);
+            // 
+            // toolStripButtonInfo
+            // 
+            toolStripButtonInfo.Image = Properties.Resources.information_32;
+            toolStripButtonInfo.ImageScaling = ToolStripItemImageScaling.None;
+            toolStripButtonInfo.ImageTransparentColor = Color.Magenta;
+            toolStripButtonInfo.Name = "toolStripButtonInfo";
+            toolStripButtonInfo.Size = new Size(64, 36);
+            toolStripButtonInfo.Text = "&Info";
+            toolStripButtonInfo.Click += ToolStripButtonInfo_Click;
             // 
             // MainForm
             // 
@@ -262,16 +327,24 @@
             Text = "Genealogical File Catalog";
             groupBoxDrives.ResumeLayout(false);
             groupBoxExtensions.ResumeLayout(false);
-            statusStrip.ResumeLayout(false);
-            statusStrip.PerformLayout();
+            statusStripMain.ResumeLayout(false);
+            statusStripMain.PerformLayout();
             toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
             toolStripContainer.BottomToolStripPanel.PerformLayout();
             toolStripContainer.ContentPanel.ResumeLayout(false);
-            toolStripContainer.ContentPanel.PerformLayout();
             toolStripContainer.TopToolStripPanel.ResumeLayout(false);
             toolStripContainer.TopToolStripPanel.PerformLayout();
             toolStripContainer.ResumeLayout(false);
             toolStripContainer.PerformLayout();
+            splitContainerMain.Panel1.ResumeLayout(false);
+            splitContainerMain.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainerMain).EndInit();
+            splitContainerMain.ResumeLayout(false);
+            splitContainerDrivesAndExtensions.Panel1.ResumeLayout(false);
+            splitContainerDrivesAndExtensions.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainerDrivesAndExtensions).EndInit();
+            splitContainerDrivesAndExtensions.ResumeLayout(false);
+            panelResults.ResumeLayout(false);
             toolStrip.ResumeLayout(false);
             toolStrip.PerformLayout();
             ResumeLayout(false);
@@ -280,7 +353,6 @@
         #endregion
 
         private CheckedListBox checkedListBoxDrives;
-		private CheckBox checkBoxIncludeHidden;
 		private GenealogicalFileCatalog.BufferedListView listViewResults;
 		private ColumnHeader columnHeaderFileName;
 		private ColumnHeader columnHeaderPath;
@@ -289,13 +361,18 @@
 		private CheckedListBox checkedListBoxExtensions;
 		private GroupBox groupBoxDrives;
 		private GroupBox groupBoxExtensions;
-		private StatusStrip statusStrip;
+		private StatusStrip statusStripMain;
 		private ToolStripContainer toolStripContainer;
 		private ToolStripStatusLabel toolStripStatusLabelInfo;
 		private ToolStrip toolStrip;
 		private ToolStripSplitButton toolStripSplitButtonStart;
-		private ToolStripMenuItem startToolStripMenuItemStart;
-		private ToolStripMenuItem toolStripMenuItemStartIncludeHiddenFolders;
-		private ToolStripButton toolStripButtonStop;
-	}
+		private ToolStripButton toolStripButtonRefresh;
+        private SplitContainer splitContainerMain;
+        private SplitContainer splitContainerDrivesAndExtensions;
+        private ToolStripMenuItem toolStripMenuItemIncludeHiddenFolders;
+        private Panel panelResults;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripButton toolStripButtonInfo;
+        private ToolStripButton toolStripButtonStop;
+    }
 }
