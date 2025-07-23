@@ -13,7 +13,7 @@
     <Company>Mijo Software</Company>
     <Authors>Michael Johne</Authors>
     <Description>Genealogical File Catalog manages the genealogical files on the computer.</Description>
-    <Version>0.2.1.3</Version>
+    <Version>0.3.0.4</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <Product>Genealogical File Catalog</Product>
