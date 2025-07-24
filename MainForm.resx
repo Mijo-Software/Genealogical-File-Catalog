@@ -430,7 +430,7 @@
     <value>0</value>
   </data>
   <data name="groupBoxResults.Text" xml:space="preserve">
-    <value>&amp;results</value>
+    <value>resu&amp;lts</value>
   </data>
   <data name="&gt;&gt;groupBoxResults.Name" xml:space="preserve">
     <value>groupBoxResults</value>
@@ -771,23 +771,29 @@
   <data name="toolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="toolStripMenuItemIncludeHiddenFolders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="toolStripMenuItemIncludeHiddenFolders.Text" xml:space="preserve">
-    <value>Include &amp;hidden folders</value>
-  </data>
-  <data name="toolStripSplitButtonStart.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+  <data name="toolStripButtonStart.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="toolStripSplitButtonStart.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="toolStripButtonStart.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="toolStripSplitButtonStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 36</value>
+  <data name="toolStripButtonStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 36</value>
   </data>
-  <data name="toolStripSplitButtonStart.Text" xml:space="preserve">
+  <data name="toolStripButtonStart.Text" xml:space="preserve">
     <value>&amp;Start</value>
+  </data>
+  <data name="toolStripButtonPause.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="toolStripButtonPause.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButtonPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 36</value>
+  </data>
+  <data name="toolStripButtonPause.Text" xml:space="preserve">
+    <value>&amp;Pause</value>
   </data>
   <data name="toolStripButtonStop.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -799,7 +805,7 @@
     <value>67, 36</value>
   </data>
   <data name="toolStripButtonStop.Text" xml:space="preserve">
-    <value>Sto&amp;p</value>
+    <value>St&amp;op</value>
   </data>
   <data name="toolStripButtonRefresh.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -816,6 +822,45 @@
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 39</value>
   </data>
+  <data name="toolStripButtonSaveToCsv.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="toolStripButtonSaveToCsv.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButtonSaveToCsv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 36</value>
+  </data>
+  <data name="toolStripButtonSaveToCsv.Text" xml:space="preserve">
+    <value>Save as CS&amp;V</value>
+  </data>
+  <data name="toolStripButtonShowProperties.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="toolStripButtonShowProperties.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButtonShowProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 36</value>
+  </data>
+  <data name="toolStripButtonShowProperties.Text" xml:space="preserve">
+    <value>P&amp;roperties</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="toolStripMenuItemIncludeHiddenFiles.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Alt+H</value>
+  </data>
+  <data name="toolStripMenuItemIncludeHiddenFiles.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+H</value>
+  </data>
+  <data name="toolStripMenuItemIncludeHiddenFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>446, 22</value>
+  </data>
+  <data name="toolStripMenuItemIncludeHiddenFiles.Text" xml:space="preserve">
+    <value>Include &amp;hidden files in search</value>
+  </data>
   <data name="toolStripMenuItemSuppressWarningsAndErrorsOnSearch.ShortcutKeyDisplayString" xml:space="preserve">
     <value>Alt+W</value>
   </data>
@@ -823,7 +868,7 @@
     <value>Alt+W</value>
   </data>
   <data name="toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 22</value>
+    <value>446, 22</value>
   </data>
   <data name="toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Text" xml:space="preserve">
     <value>Suppress &amp;warnings and errors on search</value>
@@ -835,7 +880,7 @@
     <value>Alt+Z</value>
   </data>
   <data name="toolStripMenuItemAutoResizeColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 22</value>
+    <value>446, 22</value>
   </data>
   <data name="toolStripMenuItemAutoResizeColumns.Text" xml:space="preserve">
     <value>Auto-resi&amp;ze each column to fit the longest item</value>
@@ -847,7 +892,7 @@
     <value>Alt+Y</value>
   </data>
   <data name="toolStripMenuItemDisplayTheSearchedDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 22</value>
+    <value>446, 22</value>
   </data>
   <data name="toolStripMenuItemDisplayTheSearchedDirectory.Text" xml:space="preserve">
     <value>Display the searched director&amp;y in the status bar</value>
@@ -859,10 +904,22 @@
     <value>Alt+M</value>
   </data>
   <data name="toolStripMenuItemDisplaySearchComplete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 22</value>
+    <value>446, 22</value>
   </data>
   <data name="toolStripMenuItemDisplaySearchComplete.Text" xml:space="preserve">
     <value>Display a message that the search is finished or stopped</value>
+  </data>
+  <data name="toolStripMenuItemAskToCloseDuringSearch.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Alt+C</value>
+  </data>
+  <data name="toolStripMenuItemAskToCloseDuringSearch.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+C</value>
+  </data>
+  <data name="toolStripMenuItemAskToCloseDuringSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>446, 22</value>
+  </data>
+  <data name="toolStripMenuItemAskToCloseDuringSearch.Text" xml:space="preserve">
+    <value>Ask whether the application should be &amp;closed during the search</value>
   </data>
   <data name="toolStripDropDownButtonSettings.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
@@ -4671,17 +4728,17 @@
   <data name="&gt;&gt;columnHeaderFileDateChanged.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonStart.Name" xml:space="preserve">
-    <value>toolStripSplitButtonStart</value>
+  <data name="&gt;&gt;toolStripButtonStart.Name" xml:space="preserve">
+    <value>toolStripButtonStart</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonStart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStripButtonStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItemIncludeHiddenFolders.Name" xml:space="preserve">
-    <value>toolStripMenuItemIncludeHiddenFolders</value>
+  <data name="&gt;&gt;toolStripButtonPause.Name" xml:space="preserve">
+    <value>toolStripButtonPause</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItemIncludeHiddenFolders.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStripButtonPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripButtonStop.Name" xml:space="preserve">
     <value>toolStripButtonStop</value>
@@ -4701,11 +4758,35 @@
   <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripButtonSaveToCsv.Name" xml:space="preserve">
+    <value>toolStripButtonSaveToCsv</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonSaveToCsv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonShowProperties.Name" xml:space="preserve">
+    <value>toolStripButtonShowProperties</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonShowProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripDropDownButtonSettings.Name" xml:space="preserve">
     <value>toolStripDropDownButtonSettings</value>
   </data>
   <data name="&gt;&gt;toolStripDropDownButtonSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemIncludeHiddenFiles.Name" xml:space="preserve">
+    <value>toolStripMenuItemIncludeHiddenFiles</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemIncludeHiddenFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Name" xml:space="preserve">
     <value>toolStripMenuItemSuppressWarningsAndErrorsOnSearch</value>
@@ -4729,6 +4810,12 @@
     <value>toolStripMenuItemDisplaySearchComplete</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItemDisplaySearchComplete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAskToCloseDuringSearch.Name" xml:space="preserve">
+    <value>toolStripMenuItemAskToCloseDuringSearch</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAskToCloseDuringSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripButtonInfo.Name" xml:space="preserve">
