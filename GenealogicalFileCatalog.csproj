@@ -13,7 +13,7 @@
     <Company>Mijo Software</Company>
     <Authors>Michael Johne</Authors>
     <Description>Genealogical File Catalog manages the genealogical files on the computer.</Description>
-    <Version>0.5.0.6</Version>
+    <Version>0.6.0.7</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <Product>Genealogical File Catalog</Product>
@@ -26,6 +26,9 @@
     <RepositoryUrl>https://github.com/Mijo-Software/Genealogical-File-Catalog</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Mijo-Software/Genealogical-File-Catalog</PackageProjectUrl>
     <Copyright>(C) 2025 Mijo Software</Copyright>
+    <ApplicationIcon>gfc-logo.ico</ApplicationIcon>
+    <PackageIcon>gfc.png</PackageIcon>
+    <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -37,6 +40,10 @@
     <WarningLevel>9999</WarningLevel>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="gfc-logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -59,6 +66,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="gfc.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
