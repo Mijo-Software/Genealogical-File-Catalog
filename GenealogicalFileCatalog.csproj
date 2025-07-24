@@ -13,10 +13,19 @@
     <Company>Mijo Software</Company>
     <Authors>Michael Johne</Authors>
     <Description>Genealogical File Catalog manages the genealogical files on the computer.</Description>
-    <Version>0.3.0.4</Version>
+    <Version>0.4.0.5</Version>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <Product>Genealogical File Catalog</Product>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>genealogie;file seacher;</PackageTags>
+    <RepositoryUrl>https://github.com/Mijo-Software/Genealogical-File-Catalog</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Mijo-Software/Genealogical-File-Catalog</PackageProjectUrl>
+    <Copyright>(C) 2025 Mijo Software</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -50,9 +59,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
