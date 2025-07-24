@@ -52,16 +52,21 @@
             labelFilesFound = new Label();
             groupBoxTasks = new GroupBox();
             toolStrip = new ToolStrip();
-            toolStripSplitButtonStart = new ToolStripSplitButton();
-            toolStripMenuItemIncludeHiddenFolders = new ToolStripMenuItem();
+            toolStripButtonStart = new ToolStripButton();
+            toolStripButtonPause = new ToolStripButton();
             toolStripButtonStop = new ToolStripButton();
             toolStripButtonRefresh = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
+            toolStripButtonSaveToCsv = new ToolStripButton();
+            toolStripButtonShowProperties = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
             toolStripDropDownButtonSettings = new ToolStripDropDownButton();
+            toolStripMenuItemIncludeHiddenFiles = new ToolStripMenuItem();
             toolStripMenuItemSuppressWarningsAndErrorsOnSearch = new ToolStripMenuItem();
             toolStripMenuItemAutoResizeColumns = new ToolStripMenuItem();
             toolStripMenuItemDisplayTheSearchedDirectory = new ToolStripMenuItem();
             toolStripMenuItemDisplaySearchComplete = new ToolStripMenuItem();
+            toolStripMenuItemAskToCloseDuringSearch = new ToolStripMenuItem();
             toolStripButtonInfo = new ToolStripButton();
             toolStripSeparator2 = new ToolStripSeparator();
             toolStripButtonExit = new ToolStripButton();
@@ -289,25 +294,24 @@
             toolStrip.AllowClickThrough = true;
             toolStrip.AllowItemReorder = true;
             resources.ApplyResources(toolStrip, "toolStrip");
-            toolStrip.Items.AddRange(new ToolStripItem[] { toolStripSplitButtonStart, toolStripButtonStop, toolStripButtonRefresh, toolStripSeparator1, toolStripDropDownButtonSettings, toolStripButtonInfo, toolStripSeparator2, toolStripButtonExit });
+            toolStrip.Items.AddRange(new ToolStripItem[] { toolStripButtonStart, toolStripButtonPause, toolStripButtonStop, toolStripButtonRefresh, toolStripSeparator1, toolStripButtonSaveToCsv, toolStripButtonShowProperties, toolStripSeparator3, toolStripDropDownButtonSettings, toolStripButtonInfo, toolStripSeparator2, toolStripButtonExit });
             toolStrip.Name = "toolStrip";
             toolStrip.Stretch = true;
             toolStrip.TabStop = true;
             // 
-            // toolStripSplitButtonStart
+            // toolStripButtonStart
             // 
-            toolStripSplitButtonStart.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemIncludeHiddenFolders });
-            toolStripSplitButtonStart.Image = Properties.Resources.control_play_blue_32;
-            resources.ApplyResources(toolStripSplitButtonStart, "toolStripSplitButtonStart");
-            toolStripSplitButtonStart.Name = "toolStripSplitButtonStart";
-            toolStripSplitButtonStart.ButtonClick += ButtonSearch_Click;
+            toolStripButtonStart.Image = Properties.Resources.control_play_blue_32;
+            resources.ApplyResources(toolStripButtonStart, "toolStripButtonStart");
+            toolStripButtonStart.Name = "toolStripButtonStart";
+            toolStripButtonStart.Click += ButtonSearch_Click;
             // 
-            // toolStripMenuItemIncludeHiddenFolders
+            // toolStripButtonPause
             // 
-            toolStripMenuItemIncludeHiddenFolders.AutoToolTip = true;
-            toolStripMenuItemIncludeHiddenFolders.CheckOnClick = true;
-            toolStripMenuItemIncludeHiddenFolders.Name = "toolStripMenuItemIncludeHiddenFolders";
-            resources.ApplyResources(toolStripMenuItemIncludeHiddenFolders, "toolStripMenuItemIncludeHiddenFolders");
+            toolStripButtonPause.Image = Properties.Resources.control_pause_blue_32;
+            resources.ApplyResources(toolStripButtonPause, "toolStripButtonPause");
+            toolStripButtonPause.Name = "toolStripButtonPause";
+            toolStripButtonPause.Click += ToolStripButtonPause_Click;
             // 
             // toolStripButtonStop
             // 
@@ -328,12 +332,40 @@
             toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
             // 
+            // toolStripButtonSaveToCsv
+            // 
+            toolStripButtonSaveToCsv.Image = Properties.Resources.diskette_32;
+            resources.ApplyResources(toolStripButtonSaveToCsv, "toolStripButtonSaveToCsv");
+            toolStripButtonSaveToCsv.Name = "toolStripButtonSaveToCsv";
+            toolStripButtonSaveToCsv.Click += ToolStripButtonSaveToCsv_Click;
+            // 
+            // toolStripButtonShowProperties
+            // 
+            toolStripButtonShowProperties.Image = Properties.Resources.preferences_32;
+            resources.ApplyResources(toolStripButtonShowProperties, "toolStripButtonShowProperties");
+            toolStripButtonShowProperties.Name = "toolStripButtonShowProperties";
+            toolStripButtonShowProperties.Click += ToolStripButtonShowProperties_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(toolStripSeparator3, "toolStripSeparator3");
+            // 
             // toolStripDropDownButtonSettings
             // 
-            toolStripDropDownButtonSettings.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemSuppressWarningsAndErrorsOnSearch, toolStripMenuItemAutoResizeColumns, toolStripMenuItemDisplayTheSearchedDirectory, toolStripMenuItemDisplaySearchComplete });
+            toolStripDropDownButtonSettings.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemIncludeHiddenFiles, toolStripMenuItemSuppressWarningsAndErrorsOnSearch, toolStripMenuItemAutoResizeColumns, toolStripMenuItemDisplayTheSearchedDirectory, toolStripMenuItemDisplaySearchComplete, toolStripMenuItemAskToCloseDuringSearch });
             toolStripDropDownButtonSettings.Image = Properties.Resources.wrench_orange_32;
             resources.ApplyResources(toolStripDropDownButtonSettings, "toolStripDropDownButtonSettings");
             toolStripDropDownButtonSettings.Name = "toolStripDropDownButtonSettings";
+            // 
+            // toolStripMenuItemIncludeHiddenFiles
+            // 
+            toolStripMenuItemIncludeHiddenFiles.AutoToolTip = true;
+            toolStripMenuItemIncludeHiddenFiles.Checked = true;
+            toolStripMenuItemIncludeHiddenFiles.CheckOnClick = true;
+            toolStripMenuItemIncludeHiddenFiles.CheckState = CheckState.Checked;
+            toolStripMenuItemIncludeHiddenFiles.Name = "toolStripMenuItemIncludeHiddenFiles";
+            resources.ApplyResources(toolStripMenuItemIncludeHiddenFiles, "toolStripMenuItemIncludeHiddenFiles");
             // 
             // toolStripMenuItemSuppressWarningsAndErrorsOnSearch
             // 
@@ -370,6 +402,15 @@
             toolStripMenuItemDisplaySearchComplete.CheckState = CheckState.Checked;
             toolStripMenuItemDisplaySearchComplete.Name = "toolStripMenuItemDisplaySearchComplete";
             resources.ApplyResources(toolStripMenuItemDisplaySearchComplete, "toolStripMenuItemDisplaySearchComplete");
+            // 
+            // toolStripMenuItemAskToCloseDuringSearch
+            // 
+            toolStripMenuItemAskToCloseDuringSearch.AutoToolTip = true;
+            toolStripMenuItemAskToCloseDuringSearch.Checked = true;
+            toolStripMenuItemAskToCloseDuringSearch.CheckOnClick = true;
+            toolStripMenuItemAskToCloseDuringSearch.CheckState = CheckState.Checked;
+            toolStripMenuItemAskToCloseDuringSearch.Name = "toolStripMenuItemAskToCloseDuringSearch";
+            resources.ApplyResources(toolStripMenuItemAskToCloseDuringSearch, "toolStripMenuItemAskToCloseDuringSearch");
             // 
             // toolStripButtonInfo
             // 
@@ -447,11 +488,9 @@
 		private ToolStripContainer toolStripContainer;
 		private ToolStripStatusLabel toolStripStatusLabelInfo;
 		private ToolStrip toolStrip;
-		private ToolStripSplitButton toolStripSplitButtonStart;
 		private ToolStripButton toolStripButtonRefresh;
         private SplitContainer splitContainerMain;
         private SplitContainer splitContainerDrivesAndExtensions;
-        private ToolStripMenuItem toolStripMenuItemIncludeHiddenFolders;
         private Panel panelResults;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton toolStripButtonInfo;
@@ -470,5 +509,12 @@
 		private ToolStripButton toolStripButtonExit;
         private Label labelTimeElapsed;
         private ToolStripMenuItem toolStripMenuItemDisplaySearchComplete;
+        private ToolStripButton toolStripButtonPause;
+        private ToolStripMenuItem toolStripMenuItemAskToCloseDuringSearch;
+        private ToolStripMenuItem toolStripMenuItemIncludeHiddenFiles;
+        private ToolStripButton toolStripButtonStart;
+        private ToolStripButton toolStripButtonSaveToCsv;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton toolStripButtonShowProperties;
     }
 }

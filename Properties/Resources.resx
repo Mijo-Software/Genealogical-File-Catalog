@@ -184,4 +184,34 @@
   <data name="door_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\door_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="control_pause_blue_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pause_blue_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pause_blue_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pause_blue_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pause_grey_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pause_grey_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pause_grey_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pause_grey_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrench_orange_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrench_orange_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diskette_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diskette_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diskette_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diskette_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preferences_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preferences_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preferences_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preferences_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -83,6 +83,46 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap control_pause_blue_16 {
+            get {
+                object obj = ResourceManager.GetObject("control_pause_blue_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap control_pause_blue_32 {
+            get {
+                object obj = ResourceManager.GetObject("control_pause_blue_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap control_pause_grey_16 {
+            get {
+                object obj = ResourceManager.GetObject("control_pause_grey_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap control_pause_grey_32 {
+            get {
+                object obj = ResourceManager.GetObject("control_pause_grey_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap control_play_blue_16 {
             get {
                 object obj = ResourceManager.GetObject("control_play_blue_16", resourceCulture);
@@ -163,6 +203,36 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap diskette_16 {
+            get {
+                object obj = ResourceManager.GetObject("diskette_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap diskette_32 {
+            get {
+                object obj = ResourceManager.GetObject("diskette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap door_16 {
+            get {
+                object obj = ResourceManager.GetObject("door_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap door_32 {
             get {
                 object obj = ResourceManager.GetObject("door_32", resourceCulture);
@@ -186,6 +256,26 @@ namespace GenealogicalFileCatalog.Properties {
         internal static System.Drawing.Bitmap information_32 {
             get {
                 object obj = ResourceManager.GetObject("information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preferences_16 {
+            get {
+                object obj = ResourceManager.GetObject("preferences_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preferences_32 {
+            get {
+                object obj = ResourceManager.GetObject("preferences_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +356,16 @@ namespace GenealogicalFileCatalog.Properties {
         internal static System.Drawing.Bitmap resultset_previous_32 {
             get {
                 object obj = ResourceManager.GetObject("resultset_previous_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrench_orange_16 {
+            get {
+                object obj = ResourceManager.GetObject("wrench_orange_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
