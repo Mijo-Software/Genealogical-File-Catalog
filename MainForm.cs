@@ -2,352 +2,387 @@ using System.IO;
 
 namespace GenealogicalFileCatalog
 {
-    /// <summary>
-    /// The main form of the Genealogical File Catalog application.
-    /// Provides functionality to search for genealogical files on selected drives.
-    /// </summary>
-    public partial class MainForm : Form
-    {
-        /// <summary>
-        /// Indicates whether a stop request has been made for the search operation.
-        /// </summary>
-        private bool stopRequested = false;
+	/// <summary>
+	/// The main form of the Genealogical File Catalog application.
+	/// Provides functionality to search for genealogical files on selected drives.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		/// <summary>
+		/// Indicates whether a stop request has been made for the search operation.
+		/// </summary>
+		private bool stopRequested = false;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainForm"/> class.
-        /// Sets up the UI components and loads available drives and file extensions.
-        /// </summary>
-        public MainForm()
-        {
-            // Initialize all UI components and controls defined in the designer.
-            InitializeComponent();
+		/// <summary>
+		/// Initializes a new instance of the <see cref="MainForm"/> class.
+		/// Sets up the UI components and loads available drives and file extensions.
+		/// </summary>
+		public MainForm()
+		{
+			// Initialize all UI components and controls defined in the designer.
+			InitializeComponent();
 
-            // Load available drives and file extensions into the corresponding UI controls.
-            LoadDrivesAndExtensions();
+			// Load available drives and file extensions into the corresponding UI controls.
+			LoadDrivesAndExtensions();
 
-            // Disable the stop button at startup, since no search is running.
-            toolStripButtonStop.Enabled = false;
-        }
+			// Disable the stop button at startup, since no search is running.
+			toolStripButtonStop.Enabled = false;
+		}
 
-        /// <summary>
-        /// Loads all available drives and predefined file extensions into the corresponding UI controls.
-        /// </summary>
-        private void LoadDrivesAndExtensions()
-        {
-            // Clear all items from the drives checklist to prepare for reloading.
-            checkedListBoxDrives.Items.Clear();
+		/// <summary>
+		/// Loads all available drives and predefined file extensions into the corresponding UI controls.
+		/// </summary>
+		private void LoadDrivesAndExtensions()
+		{
+			// Clear all items from the drives checklist to prepare for reloading.
+			checkedListBoxDrives.Items.Clear();
 
-            // Add all available and ready drives to the checklist, initially unchecked.
-            foreach (DriveInfo? drive in DriveInfo.GetDrives().Where(d => d.IsReady))
-            {
-                _ = checkedListBoxDrives.Items.Add(item: drive.Name, isChecked: false);
-            }
+			// Add all available and ready drives to the checklist, initially unchecked.
+			foreach (DriveInfo? drive in DriveInfo.GetDrives().Where(d => d.IsReady))
+			{
+				_ = checkedListBoxDrives.Items.Add(item: drive.Name, isChecked: false);
+			}
 
-            // Clear all items from the file extensions checklist.
-            checkedListBoxExtensions.Items.Clear();
+			// Clear all items from the file extensions checklist.
+			checkedListBoxExtensions.Items.Clear();
 
-            // Add predefined genealogical file extensions to the checklist.
-            checkedListBoxExtensions.Items.AddRange(items: [".ged", ".ahn", ".ftb"]);
+			// Add predefined genealogical file extensions to the checklist.
+			checkedListBoxExtensions.Items.AddRange(items: [".ged", ".ahn", ".ftb"]);
 
-            // Set all file extensions as checked by default.
-            for (int i = 0; i < checkedListBoxExtensions.Items.Count; i++)
-            {
-                checkedListBoxExtensions.SetItemChecked(index: i, value: true);
-            }
-        }
+			// Set all file extensions as checked by default.
+			for (int i = 0; i < checkedListBoxExtensions.Items.Count; i++)
+			{
+				checkedListBoxExtensions.SetItemChecked(index: i, value: true);
+			}
+		}
 
-        /// <summary>
-        /// Gets the file extensions selected by the user.
-        /// </summary>
-        /// <returns>An array of selected file extensions.</returns>
-        private string[] GetSelectedExtensions() => [.. checkedListBoxExtensions.CheckedItems.Cast<string>()];
+		/// <summary>
+		/// Gets the file extensions selected by the user.
+		/// </summary>
+		/// <returns>An array of selected file extensions.</returns>
+		private string[] GetSelectedExtensions() => [.. checkedListBoxExtensions.CheckedItems.Cast<string>()];
 
-        /// <summary>
-        /// Recursively searches the specified directory for files matching the given extensions.
-        /// Optionally includes hidden files and directories.
-        /// Errors are logged to the status bar and skipped.
-        /// </summary>
-        /// <param name="path">The directory path to search.</param>
-        /// <param name="includeHidden">Whether to include hidden files and directories.</param>
-        /// <param name="extensions">The file extensions to search for.</param>
-        private void SearchDirectory(string path, bool includeHidden, string[] extensions)
-        {
-            // Display the current search path in the status bar.
-            toolStripStatusLabelInfo.Text = path;
+		/// <summary>
+		/// Recursively searches the specified directory for files matching the given extensions.
+		/// Optionally includes hidden files and directories.
+		/// Errors are logged to the status bar and skipped.
+		/// </summary>
+		/// <param name="path">The directory path to search.</param>
+		/// <param name="includeHidden">Whether to include hidden files and directories.</param>
+		/// <param name="extensions">The file extensions to search for.</param>
+		private void SearchDirectory(string path, bool includeHidden, string[] extensions)
+		{
+			// Display the current search path in the status bar.
+			toolStripStatusLabelInfo.Text = path;
 
-            // If a stop request has been made, exit the method immediately.
-            if (stopRequested)
-            {
-                return;
-            }
+			// If a stop request has been made, exit the method immediately.
+			if (stopRequested)
+			{
+				return;
+			}
 
-            try
-            {
-                // Iterate through all subdirectories in the current path.
-                foreach (string dir in Directory.GetDirectories(path: path))
-                {
-                    // If a stop request has been made, exit the method.
-                    if (stopRequested)
-                    {
-                        return;
-                    }
-                    try
-                    {
-                        DirectoryInfo dirInfo = new(path: dir);
-                        // Skip hidden directories if 'includeHidden' is false.
-                        if (!includeHidden && dirInfo.Attributes.HasFlag(flag: FileAttributes.Hidden))
-                        {
-                            continue;
-                        }
-                        // Recursively search the subdirectory.
-                        SearchDirectory(path: dir, includeHidden: includeHidden, extensions: extensions);
-                    }
-                    catch (UnauthorizedAccessException ex)
-                    {
-                        // Show a warning if access to the directory is denied.
-                        _ = MessageBox.Show(text: $"Access denied: {dir}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                        continue;
-                    }
-                    catch (Exception ex)
-                    {
-                        // Show a warning for any other directory access errors.
-                        _ = MessageBox.Show(text: $"Error accessing directory: {dir} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                    }
-                }
+			try
+			{
+				// Iterate through all subdirectories in the current path.
+				foreach (string dir in Directory.GetDirectories(path: path))
+				{
+					// If a stop request has been made, exit the method.
+					if (stopRequested)
+					{
+						return;
+					}
+					try
+					{
+						DirectoryInfo dirInfo = new(path: dir);
+						// Skip hidden directories if 'includeHidden' is false.
+						if (!includeHidden && dirInfo.Attributes.HasFlag(flag: FileAttributes.Hidden))
+						{
+							continue;
+						}
+						// Recursively search the subdirectory.
+						SearchDirectory(path: dir, includeHidden: includeHidden, extensions: extensions);
+					}
+					catch (UnauthorizedAccessException ex)
+					{
+						// Show a warning if access to the directory is denied.
+						if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+						{
+							_ = MessageBox.Show(text: $"Access denied: {dir}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+						}
 
-                // Iterate through all selected file extensions.
-                foreach (string ext in extensions)
-                {
-                    string[] files;
-                    try
-                    {
-                        // Get all files in the current directory matching the extension.
-                        files = Directory.GetFiles(path: path, searchPattern: "*" + ext);
-                    }
-                    catch (UnauthorizedAccessException ex)
-                    {
-                        // Show a warning if access to the files is denied.
-                        _ = MessageBox.Show(text: $"Access denied: {path}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                        continue;
-                    }
-                    catch (Exception ex)
-                    {
-                        // Show a warning for any other file access errors.
-                        _ = MessageBox.Show(text: $"Error accessing files in: {path} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                        continue;
-                    }
+						continue;
+					}
+					catch (Exception ex)
+					{
+						// Show a warning for any other directory access errors.
+						if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+						{
+							_ = MessageBox.Show(text: $"Error accessing directory: {dir} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+						}
+					}
+				}
 
-                    // Iterate through all found files.
-                    foreach (string file in files)
-                    {
-                        // If a stop request has been made, exit the method.
-                        if (stopRequested)
-                        {
-                            return;
-                        }
+				// Iterate through all selected file extensions.
+				foreach (string ext in extensions)
+				{
+					string[] files;
+					try
+					{
+						// Get all files in the current directory matching the extension.
+						files = Directory.GetFiles(path: path, searchPattern: "*" + ext);
+					}
+					catch (UnauthorizedAccessException ex)
+					{
+						// Show a warning if access to the files is denied.
+						if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+						{
+							_ = MessageBox.Show(text: $"Access denied: {path}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+						}
 
-                        try
-                        {
-                            FileInfo fileInfo = new(fileName: file);
-                            // Skip hidden files if 'includeHidden' is false.
-                            if (!includeHidden && fileInfo.Attributes.HasFlag(flag: FileAttributes.Hidden))
-                            {
-                                continue;
-                            }
+						continue;
+					}
+					catch (Exception ex)
+					{
+						// Show a warning for any other file access errors.
+						if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+						{
+							_ = MessageBox.Show(text: $"Error accessing files in: {path} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+						}
 
-                            // Add file details to the results list view on the UI thread.
-                            Invoke(() =>
-                            {
-                                ListViewItem item = new(text: fileInfo.Name);
-                                _ = item.SubItems.Add(text: fileInfo.DirectoryName);
-                                _ = item.SubItems.Add(text: fileInfo.Length.ToString());
-                                _ = item.SubItems.Add(text: fileInfo.LastWriteTime.ToString());
-                                _ = listViewResults.Items.Add(value: item);
-                            });
-                        }
-                        catch (UnauthorizedAccessException ex)
-                        {
-                            // Show a warning if access to the file is denied.
-                            _ = MessageBox.Show(text: $"Access denied: {file}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                            continue;
-                        }
-                        catch (Exception ex)
-                        {
-                            // Show a warning for any other file access errors.
-                            _ = MessageBox.Show(text: $"Error accessing file: {file} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                            continue;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Show a warning a general error message.
-                _ = MessageBox.Show(text: $"General error: {ex.Message}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-            }
-        }
+						continue;
+					}
 
-        /// <summary>
-        /// Handles the click event for the search button.
-        /// Starts the search operation asynchronously.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private async void ButtonSearch_Click(object sender, EventArgs e)
-        {
-            // Clear previous search results from the list view.
-            listViewResults.Items.Clear();
+					// Iterate through all found files.
+					foreach (string file in files)
+					{
+						// If a stop request has been made, exit the method.
+						if (stopRequested)
+						{
+							return;
+						}
 
-            // Disable the start button to prevent multiple searches.
-            // Enable the stop and refresh buttons during the search operation.
-            toolStripSplitButtonStart.Enabled = false;
-            toolStripButtonStop.Enabled = true;
-            toolStripButtonRefresh.Enabled = false;
+						try
+						{
+							FileInfo fileInfo = new(fileName: file);
+							// Skip hidden files if 'includeHidden' is false.
+							if (!includeHidden && fileInfo.Attributes.HasFlag(flag: FileAttributes.Hidden))
+							{
+								continue;
+							}
 
-            // Reset the stop request flag.
-            stopRequested = false;
+							// Add file details to the results list view on the UI thread.
+							Invoke(() =>
+							{
+								ListViewItem item = new(text: fileInfo.Name);
+								_ = item.SubItems.Add(text: fileInfo.DirectoryName);
+								// Format the file size in bytes with thousands separator (international style).
+								_ = item.SubItems.Add(text: fileInfo.Length.ToString(format: "N0", provider: System.Globalization.CultureInfo.InvariantCulture));
+								_ = item.SubItems.Add(text: fileInfo.LastWriteTime.ToString());
+								_ = listViewResults.Items.Add(value: item);
 
-            // Determine whether hidden folders should be included in the search.
-            bool includeHidden = toolStripMenuItemIncludeHiddenFolders.Checked;
+								// Auto-resize each column to fit the longest item (header or subitem)
+								if (toolStripMenuItemAutoResizeColumns.Checked)
+								{
+									for (int col = 0; col < listViewResults.Columns.Count; col++)
+									{
+										listViewResults.AutoResizeColumn(columnIndex: col, headerAutoResize: ColumnHeaderAutoResizeStyle.ColumnContent);
+									}
+								}
+							});
+						}
+						catch (UnauthorizedAccessException ex)
+						{
+							// Show a warning if access to the file is denied.
+							if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+							{
+								_ = MessageBox.Show(text: $"Access denied: {file}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+							}
 
-            // Get the list of drives selected by the user.
-            List<string> selectedDrives = [.. checkedListBoxDrives.CheckedItems.Cast<string>()];
+							continue;
+						}
+						catch (Exception ex)
+						{
+							// Show a warning for any other file access errors.
+							if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+							{
+								_ = MessageBox.Show(text: $"Error accessing file: {file} ({ex.Message})", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+							}
 
-            // Check if at least one drive is selected; if not, show a warning and abort the search.
-            if (selectedDrives.Count == 0)
-            {
-                MessageBox.Show(
-                    text: "Please select at least one drive before starting the search.",
-                    caption: "No Drive Selected",
-                    buttons: MessageBoxButtons.OK,
-                    icon: MessageBoxIcon.Warning
-                );
-                toolStripSplitButtonStart.Enabled = true;
-                toolStripButtonStop.Enabled = false;
-                toolStripButtonRefresh.Enabled = true;
-                toolStripStatusLabelInfo.Text = "No drive selected.";
-                return;
-            }
+							continue;
+						}
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				// Show a warning a general error message.
+				if (!toolStripMenuItemSuppressWarningsAndErrorsOnSearch.Checked)
+				{
+					_ = MessageBox.Show(text: $"General error: {ex.Message}", caption: "Warning", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+				}
+			}
+		}
 
-            // Get the list of file extensions selected by the user.
-            string[] selectedExtensions = GetSelectedExtensions();
+		/// <summary>
+		/// Handles the click event for the search button.
+		/// Starts the search operation asynchronously.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private async void ButtonSearch_Click(object sender, EventArgs e)
+		{
+			// Clear previous search results from the list view.
+			listViewResults.Items.Clear();
 
-            // Check if at least one extension is selected; if not, show a warning and abort the search.
-            if (selectedExtensions.Length == 0)
-            {
-                MessageBox.Show(
-                    text: "Please select at least one file extension before starting the search.",
-                    caption: "No Extension Selected",
-                    buttons: MessageBoxButtons.OK,
-                    icon: MessageBoxIcon.Warning
-                );
-                toolStripSplitButtonStart.Enabled = true;
-                toolStripButtonStop.Enabled = false;
-                toolStripButtonRefresh.Enabled = true;
-                toolStripStatusLabelInfo.Text = "No extension selected.";
-                return;
-            }
+			// Disable the start button to prevent multiple searches.
+			// Enable the stop and refresh buttons during the search operation.
+			toolStripSplitButtonStart.Enabled = false;
+			toolStripButtonStop.Enabled = true;
+			toolStripButtonRefresh.Enabled = false;
 
-            // Perform the search asynchronously for each selected drive.
-            foreach (string? drive in selectedDrives)
-            {
-                await Task.Run(() => SearchDirectory(path: drive, includeHidden: includeHidden, extensions: selectedExtensions));
-                // If a stop request was made, exit the loop early.
-                if (stopRequested)
-                {
-                    break;
-                }
-            }
+			// Reset the stop request flag.
+			stopRequested = false;
 
-            // Re-enable the start button and disable the stop and refresh buttons after the search.
-            // Update the status label to indicate whether the search was stopped or completed.
-            toolStripSplitButtonStart.Enabled = true;
-            toolStripButtonStop.Enabled = false;
-            toolStripButtonRefresh.Enabled = true;
-            toolStripStatusLabelInfo.Text = stopRequested ? "Stopped" : "Done";
-        }
+			// Determine whether hidden folders should be included in the search.
+			bool includeHidden = toolStripMenuItemIncludeHiddenFolders.Checked;
 
-        /// <summary>
-        /// Handles the click event for the stop button.
-        /// Requests the search operation to stop.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private void ButtonStop_Click(object sender, EventArgs e) => stopRequested = true;
+			// Get the list of drives selected by the user.
+			List<string> selectedDrives = [.. checkedListBoxDrives.CheckedItems.Cast<string>()];
 
-        /// <summary>
-        /// Handles the click event for the refresh button.
-        /// Reloads the drives and extensions and clears the search results.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private void ButtonRefresh_Click(object sender, EventArgs e)
-        {
-            // Reload the list of available drives and file extensions in the UI.
-            LoadDrivesAndExtensions();
+			// Check if at least one drive is selected; if not, show a warning and abort the search.
+			if (selectedDrives.Count == 0)
+			{
+				_ = MessageBox.Show(
+					text: "Please select at least one drive before starting the search.",
+					caption: "No Drive Selected",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Warning
+				);
+				toolStripSplitButtonStart.Enabled = true;
+				toolStripButtonStop.Enabled = false;
+				toolStripButtonRefresh.Enabled = true;
+				toolStripStatusLabelInfo.Text = "No drive selected.";
+				return;
+			}
 
-            // Clear all previous search results from the results list view.
-            listViewResults.Items.Clear();
-        }
+			// Get the list of file extensions selected by the user.
+			string[] selectedExtensions = GetSelectedExtensions();
 
-        /// <summary>
-        /// Handles the item check event for the drives checklist.
-        /// Prevents the user from unchecking the last remaining drive.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private void CheckedListBoxDrives_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            // If the user tries to uncheck the last remaining drive, prevent this action.
-            if (e.NewValue == CheckState.Unchecked && checkedListBoxDrives.CheckedItems.Count == 1)
-            {
-                // Force the last drive to remain checked to ensure at least one drive is always selected.
-                e.NewValue = CheckState.Checked;
-            }
-        }
+			// Check if at least one extension is selected; if not, show a warning and abort the search.
+			if (selectedExtensions.Length == 0)
+			{
+				_ = MessageBox.Show(
+					text: "Please select at least one file extension before starting the search.",
+					caption: "No Extension Selected",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Warning
+				);
+				toolStripSplitButtonStart.Enabled = true;
+				toolStripButtonStop.Enabled = false;
+				toolStripButtonRefresh.Enabled = true;
+				toolStripStatusLabelInfo.Text = "No extension selected.";
+				return;
+			}
 
-        /// <summary>
-        /// Handles the item check event for the extensions checklist.
-        /// Prevents the user from unchecking the last remaining extension.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private void CheckedListBoxExtensions_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            // If the user tries to uncheck the last remaining drive, prevent this action.
-            if (e.NewValue == CheckState.Unchecked && checkedListBoxExtensions.CheckedItems.Count == 1)
-            {
-                // Force the last drive to remain checked to ensure at least one drive is always selected.
-                e.NewValue = CheckState.Checked;
-            }
-        }
+			// Perform the search asynchronously for each selected drive.
+			foreach (string? drive in selectedDrives)
+			{
+				await Task.Run(() => SearchDirectory(path: drive, includeHidden: includeHidden, extensions: selectedExtensions));
+				// If a stop request was made, exit the loop early.
+				if (stopRequested)
+				{
+					break;
+				}
+			}
 
-        /// <summary>
-        /// Handles the click event for the info button.
-        /// Displays a message box with the program name, version number, and a description of the application.
-        /// </summary>
-        /// <param name="sender">The event source.</param>
-        /// <param name="e">The event data.</param>
-        private void ToolStripButtonInfo_Click(object sender, EventArgs e)
-        {
-            // Get assembly information for program name and version
-            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            var name = assembly.GetName().Name;
-            var version = assembly.GetName().Version?.ToString() ?? "Unknown";
+			// Re-enable the start button and disable the stop and refresh buttons after the search.
+			// Update the status label to indicate whether the search was stopped or completed.
+			toolStripSplitButtonStart.Enabled = true;
+			toolStripButtonStop.Enabled = false;
+			toolStripButtonRefresh.Enabled = true;
+			toolStripStatusLabelInfo.Text = stopRequested ? "Stopped" : "Done";
+		}
 
-            // Program description (customize as needed)
-            string description = "Genealogical File Catalog - Search and manage genealogical files on selected drives.";
+		/// <summary>
+		/// Handles the click event for the stop button.
+		/// Requests the search operation to stop.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private void ButtonStop_Click(object sender, EventArgs e) => stopRequested = true;
 
-            // Build the message text
-            string message = $"{name} v{version}\n\n{description}";
+		/// <summary>
+		/// Handles the click event for the refresh button.
+		/// Reloads the drives and extensions and clears the search results.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private void ButtonRefresh_Click(object sender, EventArgs e)
+		{
+			// Reload the list of available drives and file extensions in the UI.
+			LoadDrivesAndExtensions();
 
-            // Show the information message box
-            MessageBox.Show(
-                text: message,
-                caption: "Program Information",
-                buttons: MessageBoxButtons.OK,
-                icon: MessageBoxIcon.Information
-            );
-        }
-    }
+			// Clear all previous search results from the results list view.
+			listViewResults.Items.Clear();
+		}
+
+		/// <summary>
+		/// Handles the item check event for the drives checklist.
+		/// Prevents the user from unchecking the last remaining drive.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private void CheckedListBoxDrives_ItemCheck(object sender, ItemCheckEventArgs e)
+		{
+			// If the user tries to uncheck the last remaining drive, prevent this action.
+			if (e.NewValue == CheckState.Unchecked && checkedListBoxDrives.CheckedItems.Count == 1)
+			{
+				// Force the last drive to remain checked to ensure at least one drive is always selected.
+				e.NewValue = CheckState.Checked;
+			}
+		}
+
+		/// <summary>
+		/// Handles the item check event for the extensions checklist.
+		/// Prevents the user from unchecking the last remaining extension.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private void CheckedListBoxExtensions_ItemCheck(object sender, ItemCheckEventArgs e)
+		{
+			// If the user tries to uncheck the last remaining drive, prevent this action.
+			if (e.NewValue == CheckState.Unchecked && checkedListBoxExtensions.CheckedItems.Count == 1)
+			{
+				// Force the last drive to remain checked to ensure at least one drive is always selected.
+				e.NewValue = CheckState.Checked;
+			}
+		}
+
+		/// <summary>
+		/// Handles the click event for the info button.
+		/// Displays a message box with the program name, version number, and a description of the application.
+		/// </summary>
+		/// <param name="sender">The event source.</param>
+		/// <param name="e">The event data.</param>
+		private void ToolStripButtonInfo_Click(object sender, EventArgs e)
+		{
+			// Get assembly information for program name and version
+			string? name = AssemblyInfo.AssemblyTitle;
+			string version = AssemblyInfo.AssemblyVersion;
+
+			// Program description (customize as needed)
+			string description = "Genealogical File Catalog - Search and manage genealogical files on selected drives.";
+
+			// Build the message text
+			string message = $"{name} v{version}\n\n{description}";
+
+			// Show the information message box
+			_ = MessageBox.Show(
+				text: message,
+				caption: "Program Information",
+				buttons: MessageBoxButtons.OK,
+				icon: MessageBoxIcon.Information
+			);
+		}
+	}
 }
