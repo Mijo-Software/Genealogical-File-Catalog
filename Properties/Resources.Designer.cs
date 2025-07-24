@@ -163,6 +163,16 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap door_32 {
+            get {
+                object obj = ResourceManager.GetObject("door_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap information_16 {
             get {
                 object obj = ResourceManager.GetObject("information_16", resourceCulture);

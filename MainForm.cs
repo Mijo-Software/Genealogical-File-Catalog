@@ -13,6 +13,13 @@ namespace GenealogicalFileCatalog
 		/// </summary>
 		private bool stopRequested = false;
 
+		private int filesFound;
+
+		/// <summary>
+		/// Implements sorting for the ListView columns.
+		/// </summary>
+		private int sortColumn = -1;
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="MainForm"/> class.
 		/// Sets up the UI components and loads available drives and file extensions.
@@ -27,6 +34,28 @@ namespace GenealogicalFileCatalog
 
 			// Disable the stop button at startup, since no search is running.
 			toolStripButtonStop.Enabled = false;
+		}
+
+		/// <summary>
+		/// Increments the count of files found in this search operation.
+		/// </summary>
+		private void IncrementAndUpdateFoundedFiles()
+		{
+			// Increment the count of files found in this search operation.
+			filesFound++;
+			// Update the status label to show the current count of files found.
+			labelFilesFound.Text = $"Files Found: {filesFound}";
+		}
+
+		/// <summary>
+		/// Reset the count of files found in this search operation.
+		/// </summary>
+		private void ResetAndUpdateFoundedFiles()
+		{
+			// Set the count of files found to zero in this search operation.
+			filesFound = 0;
+			// Update the status label to show the current count of files found.
+			labelFilesFound.Text = $"Files found: {filesFound}";
 		}
 
 		/// <summary>
@@ -73,7 +102,7 @@ namespace GenealogicalFileCatalog
 		private void SearchDirectory(string path, bool includeHidden, string[] extensions)
 		{
 			// Display the current search path in the status bar.
-			toolStripStatusLabelInfo.Text = path;
+			toolStripStatusLabelInfo.Text = toolStripMenuItemDisplayTheSearchedDirectory.Checked ? path : string.Empty;
 
 			// If a stop request has been made, exit the method immediately.
 			if (stopRequested)
@@ -173,6 +202,9 @@ namespace GenealogicalFileCatalog
 							// Add file details to the results list view on the UI thread.
 							Invoke(() =>
 							{
+								IncrementAndUpdateFoundedFiles();
+								// Create a new ListViewItem for the file.
+								// The item contains the file name, directory, size, and last write time.
 								ListViewItem item = new(text: fileInfo.Name);
 								_ = item.SubItems.Add(text: fileInfo.DirectoryName);
 								// Format the file size in bytes with thousands separator (international style).
@@ -233,6 +265,8 @@ namespace GenealogicalFileCatalog
 		{
 			// Clear previous search results from the list view.
 			listViewResults.Items.Clear();
+
+			ResetAndUpdateFoundedFiles();
 
 			// Disable the start button to prevent multiple searches.
 			// Enable the stop and refresh buttons during the search operation.
@@ -383,6 +417,56 @@ namespace GenealogicalFileCatalog
 				buttons: MessageBoxButtons.OK,
 				icon: MessageBoxIcon.Information
 			);
+		}
+
+		private void ListViewResults_ColumnClick(object sender, ColumnClickEventArgs e)
+		{
+			// If the same column is clicked, reverse the sort order.
+			if (e.Column == sortColumn)
+			{
+				listViewResults.Sorting = listViewResults.Sorting == SortOrder.Ascending ? SortOrder.Descending : SortOrder.Ascending;
+			}
+			else
+			{
+				sortColumn = e.Column;
+				listViewResults.Sorting = SortOrder.Ascending;
+			}
+			listViewResults.ListViewItemSorter = new ListViewItemComparer(column: e.Column, sortOrder: listViewResults.Sorting);
+			listViewResults.Sort();
+		}
+
+		private void ToolStripButtonExit_Click(object sender, EventArgs e) => Close();
+	}
+
+	/// <summary>
+	/// Custom comparer for ListView items.
+	/// </summary>
+	internal class ListViewItemComparer(int column, SortOrder sortOrder) : System.Collections.IComparer
+	{
+		// Store the column index to be sorted.
+		private readonly int col = column;
+		// Store the sort order (ascending or descending).
+		private readonly SortOrder order = sortOrder;
+
+		public int Compare(object? x, object? y)
+		{
+			// Ensure both objects are ListViewItem instances.
+			if (x is not ListViewItem itemX || y is not ListViewItem itemY)
+			{
+				return 0;
+			}
+
+			// Get the text of the subitem for the specified column.
+			string a = itemX.SubItems[index: col].Text;
+			string b = itemY.SubItems[index: col].Text;
+
+			// Try to compare as numbers if possible, otherwise compare as strings.
+			int result = decimal.TryParse(s: a.Replace(oldValue: ",", newValue: ""), result: out decimal da) && decimal.TryParse(s: b.Replace(oldValue: ",", newValue: ""), result: out decimal db)
+				? da.CompareTo(value: db)
+				: string.Compare(strA: a, strB: b, comparisonType: StringComparison.CurrentCultureIgnoreCase);
+
+			// Return the result based on the selected sort order.
+			return order == SortOrder.Ascending ? result : -result;
 		}
 	}
 }
