@@ -63,9 +63,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrow_refresh_16 {
+        internal static System.Drawing.Bitmap fatcow_arrow_refresh_16 {
             get {
-                object obj = ResourceManager.GetObject("arrow_refresh_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_arrow_refresh_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrow_refresh_32 {
+        internal static System.Drawing.Bitmap fatcow_arrow_refresh_32 {
             get {
-                object obj = ResourceManager.GetObject("arrow_refresh_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_arrow_refresh_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_pause_blue_16 {
+        internal static System.Drawing.Bitmap fatcow_check_box_16 {
             get {
-                object obj = ResourceManager.GetObject("control_pause_blue_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_check_box-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_pause_blue_32 {
+        internal static System.Drawing.Bitmap fatcow_check_box_32 {
             get {
-                object obj = ResourceManager.GetObject("control_pause_blue_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_check_box_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_pause_grey_16 {
+        internal static System.Drawing.Bitmap fatcow_compress_16 {
             get {
-                object obj = ResourceManager.GetObject("control_pause_grey_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_compress_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_pause_grey_32 {
+        internal static System.Drawing.Bitmap fatcow_compress_32 {
             get {
-                object obj = ResourceManager.GetObject("control_pause_grey_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_compress_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_play_blue_16 {
+        internal static System.Drawing.Bitmap fatcow_control_pause_blue_16 {
             get {
-                object obj = ResourceManager.GetObject("control_play_blue_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_pause_blue_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_play_blue_32 {
+        internal static System.Drawing.Bitmap fatcow_control_pause_blue_32 {
             get {
-                object obj = ResourceManager.GetObject("control_play_blue_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_pause_blue_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_play_grey_16 {
+        internal static System.Drawing.Bitmap fatcow_control_play_blue_16 {
             get {
-                object obj = ResourceManager.GetObject("control_play_grey_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_play_blue_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_play_grey_32 {
+        internal static System.Drawing.Bitmap fatcow_control_play_blue_32 {
             get {
-                object obj = ResourceManager.GetObject("control_play_grey_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_play_blue_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_stop_blue_16 {
+        internal static System.Drawing.Bitmap fatcow_control_stop_blue_16 {
             get {
-                object obj = ResourceManager.GetObject("control_stop_blue_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_stop_blue_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_stop_blue_32 {
+        internal static System.Drawing.Bitmap fatcow_control_stop_blue_32 {
             get {
-                object obj = ResourceManager.GetObject("control_stop_blue_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_control_stop_blue_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_stop_grey_16 {
+        internal static System.Drawing.Bitmap fatcow_cross_16 {
             get {
-                object obj = ResourceManager.GetObject("control_stop_grey_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_cross_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap control_stop_grey_32 {
+        internal static System.Drawing.Bitmap fatcow_cross_32 {
             get {
-                object obj = ResourceManager.GetObject("control_stop_grey_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_cross_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap diskette_16 {
+        internal static System.Drawing.Bitmap fatcow_diskette_16 {
             get {
-                object obj = ResourceManager.GetObject("diskette_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_diskette_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap diskette_32 {
+        internal static System.Drawing.Bitmap fatcow_diskette_32 {
             get {
-                object obj = ResourceManager.GetObject("diskette_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_diskette_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap door_16 {
+        internal static System.Drawing.Bitmap fatcow_door_16 {
             get {
-                object obj = ResourceManager.GetObject("door_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_door_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap door_32 {
+        internal static System.Drawing.Bitmap fatcow_door_32 {
             get {
-                object obj = ResourceManager.GetObject("door_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_door_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +243,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap information_16 {
+        internal static System.Drawing.Bitmap fatcow_folder_16 {
             get {
-                object obj = ResourceManager.GetObject("information_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_folder_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +253,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap information_32 {
+        internal static System.Drawing.Bitmap fatcow_folder_32 {
             get {
-                object obj = ResourceManager.GetObject("information_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_folder_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap preferences_16 {
+        internal static System.Drawing.Bitmap fatcow_information_16 {
             get {
-                object obj = ResourceManager.GetObject("preferences_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_information_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap preferences_32 {
+        internal static System.Drawing.Bitmap fatcow_information_32 {
             get {
-                object obj = ResourceManager.GetObject("preferences_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_information_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_first_16 {
+        internal static System.Drawing.Bitmap fatcow_language_16 {
             get {
-                object obj = ResourceManager.GetObject("resultset_first_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_language_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_first_32 {
+        internal static System.Drawing.Bitmap fatcow_language_32 {
             get {
-                object obj = ResourceManager.GetObject("resultset_first_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_language_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_last_16 {
+        internal static System.Drawing.Bitmap fatcow_move_to_folder_16 {
             get {
-                object obj = ResourceManager.GetObject("resultset_last_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_move_to_folder_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_last_32 {
+        internal static System.Drawing.Bitmap fatcow_move_to_folder_32 {
             get {
-                object obj = ResourceManager.GetObject("resultset_last_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_move_to_folder_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_next_16 {
+        internal static System.Drawing.Bitmap fatcow_page_white_16 {
             get {
-                object obj = ResourceManager.GetObject("resultset_next_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_page_white_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_next_32 {
+        internal static System.Drawing.Bitmap fatcow_page_white_32 {
             get {
-                object obj = ResourceManager.GetObject("resultset_next_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_page_white_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +343,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_previous_16 {
+        internal static System.Drawing.Bitmap fatcow_page_white_copy_16 {
             get {
-                object obj = ResourceManager.GetObject("resultset_previous_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_page_white_copy_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resultset_previous_32 {
+        internal static System.Drawing.Bitmap fatcow_page_white_copy_32 {
             get {
-                object obj = ResourceManager.GetObject("resultset_previous_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_page_white_copy_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +363,9 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wrench_orange_16 {
+        internal static System.Drawing.Bitmap fatcow_palette_16 {
             get {
-                object obj = ResourceManager.GetObject("wrench_orange_16", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_palette_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +373,1619 @@ namespace GenealogicalFileCatalog.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wrench_orange_32 {
+        internal static System.Drawing.Bitmap fatcow_palette_32 {
             get {
-                object obj = ResourceManager.GetObject("wrench_orange_32", resourceCulture);
+                object obj = ResourceManager.GetObject("fatcow_palette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_preferences_16 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_preferences_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_preferences_32 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_preferences_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_wrench_16 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_wrench_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_wrench_32 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_wrench_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_wrench_orange_16 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_wrench_orange_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fatcow_wrench_orange_32 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_wrench_orange_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_about_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_about_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_about_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_about_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_checkbox_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_checkbox_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_checkbox_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_checkbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_compress_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_compress_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_compress_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_compress_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_copy_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_copy_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_copy_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_copy_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_delete_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_delete_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_delete_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_document_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_document_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_document_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_document_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_document_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_document_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_document_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_document_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_documents_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_documents_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_documents_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_documents_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_door_exit_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_door_exit_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_door_exit_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_door_exit_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_floppy_disk_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_floppy_disk_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_floppy_disk_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_floppy_disk_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_folder_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_folder_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_folder_document2_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_folder_document2_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_folder_document2_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_folder_document2_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_pause_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_pause_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_pause_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_pause_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_play_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_play_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_play_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_play_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_stop_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_stop_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_media_stop_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_media_stop_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_painters_palette_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_painters_palette_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_painters_palette_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_painters_palette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_refresh_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_refresh_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_refresh_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_refresh_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_wrench_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_wrench_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_plain_wrench_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-plain_wrench_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_about_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_about_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_about_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_about_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_checkbox_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_checkbox_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_checkbox_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_checkbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_compress_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_compress_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_compress_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_compress_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_copy_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_copy_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_copy_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_copy_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_delete_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_delete_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_delete_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_document_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_document_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_document_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_document_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_document_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_document_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_document_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_document_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_documents_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_documents_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_documents_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_documents_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_door_exit_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_door_exit_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_door_exit_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_door_exit_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_floppy_disk_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_floppy_disk_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_floppy_disk_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_floppy_disk_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_folder_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_folder_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_folder_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_folder_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_folder_document2_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_folder_document2_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_folder_document2_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_folder_document2_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_pause_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_pause_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_pause_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_pause_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_play_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_play_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_play_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_play_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_stop_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_stop_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_media_stop_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_media_stop_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_painters_palette_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_painters_palette-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_painters_palette_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_painters_palette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_refresh_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_refresh_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_refresh_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_refresh_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_wrench_16 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_wrench_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i_collection_selected_wrench_32 {
+            get {
+                object obj = ResourceManager.GetObject("i-collection-selected_wrench_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_about_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_about_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_about_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_about_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_checkbox_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_checkbox_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_checkbox_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_checkbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_compress_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_compress_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_compress_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_compress_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_copy_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_copy_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_copy_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_copy_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_delete_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_delete_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_delete_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_document_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_document_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_document_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_document_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_document_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_document_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_document_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_document_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_documents_empty_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_documents_empty_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_documents_empty_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_documents_empty_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_door_exit_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_door_exit_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_door_exit_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_door_exit_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_floppy_disk_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_floppy_disk_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_floppy_disk_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_floppy_disk_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_folder_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_folder_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_folder_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_folder_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_folder_document2_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_folder_document2_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_folder_document2_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_folder_document2_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_pause_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_pause_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_pause_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_pause_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_play_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_play_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_play_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_play_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_stop_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_stop_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_media_stop_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_media_stop_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_painters_palette_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_painters_palette_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_painters_palette_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_painters_palette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_refresh_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_refresh_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_refresh_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_refresh_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_wrench_16 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_wrench_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_collection_wrench_32 {
+            get {
+                object obj = ResourceManager.GetObject("o-collection_wrench_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_about_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_about_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_about_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_about_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_checkbox_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_checkbox_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_checkbox_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_checkbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_compress_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_compress-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_compress_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_compress_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_delete_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_delete_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_delete_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_disk_blue_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_disk_blue_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_disk_blue_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_disk_blue_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_out_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_out_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_out_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_out_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_preferences_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_preferences_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_document_preferences_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_document_preferences_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_documents_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_documents_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_documents_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_documents_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_door_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_door_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_door_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_door_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_exit_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_exit_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_exit_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_exit_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_folder_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_folder_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_folder_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_folder_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_information_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_information_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_information_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_information_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_information2_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_information2_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_information2_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_information2_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_pause_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_pause_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_pause_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_pause_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_play_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_play_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_play_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_play_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_stop_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_stop_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_media_stop_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_media_stop_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_palette_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_palette_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_palette_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_palette_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_preferences_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_preferences_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_preferences_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_preferences_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_refresh_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_refresh_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_refresh_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_refresh_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_wrench_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_wrench_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_collection_wrench_32 {
+            get {
+                object obj = ResourceManager.GetObject("x-collection_wrench_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
